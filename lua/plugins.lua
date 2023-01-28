@@ -32,7 +32,5 @@ packer.startup(function(use)
   use { 'mhinz/vim-startify' }                       -- start screen
   use { 'DanilaMihailov/beacon.nvim' }
   use { 'Mofiqul/dracula.nvim' }
-
-
-
+  use ('nvim-treesitter/nvim-treesitter',  {run = ':TSUpdate'})
   end)
