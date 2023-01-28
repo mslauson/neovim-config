@@ -58,4 +58,7 @@ packer.startup(function(use)
   }
 }
 use { "williamboman/mason.nvim" }
+use ('mfussenegger/nvim-dap')
+use ('rcarriga/nvim-dap-ui')
+
 end)
