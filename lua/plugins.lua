@@ -34,7 +34,6 @@ packer.startup(function(use)
   use ('tpope/vim-commentary')
   --use ( 'perservim/nerdtree' )                       -- filesystem navigation
  -- use ( 'Xuyuanp/nerdtree-git-plugin' )              -- git integration
- -- use { 'kyazdani42/nvim-web-devicons' }             -- filesystem icons
   use { 'mhinz/vim-startify' }                       -- start screen
   use { 'DanilaMihailov/beacon.nvim' }
 --  use { 'Mofiqul/dracula.nvim' }
@@ -64,5 +63,5 @@ packer.startup(function(use)
 use { "williamboman/mason.nvim" }
 use ('mfussenegger/nvim-dap')
 use ('rcarriga/nvim-dap-ui')
-
+use ('kyazdani42/nvim-web-devicons')
 end)
