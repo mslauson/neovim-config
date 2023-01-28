@@ -64,4 +64,9 @@ use { "williamboman/mason.nvim" }
 use ('mfussenegger/nvim-dap')
 use ('rcarriga/nvim-dap-ui')
 use ('kyazdani42/nvim-web-devicons')
+
+--find and replace
+  use { 'windwp/nvim-spectre' }
+  use ( 'nvim-lua/plenary.nvim' )
+
 end)
