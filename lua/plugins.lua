@@ -24,16 +24,20 @@ packer.startup(function(use)
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  --use {                                              -- filesystem navigation
-    --'kyazdani42/nvim-tree.lua',
-    --requires = 'kyazdani42/nvim-web-devicons'        -- filesystem icons
-  --}
-  use ( 'perservim/nerdtree' )                       -- filesystem navigation
-  use ( 'Xuyuanp/nerdtree-git-plugin' )              -- git integration
-  use { 'kyazdani42/nvim-web-devicons' }             -- filesystem icons
+  use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional, for file icons
+  },
+  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+  use ('tpope/vim-commentary')
+  --use ( 'perservim/nerdtree' )                       -- filesystem navigation
+ -- use ( 'Xuyuanp/nerdtree-git-plugin' )              -- git integration
+ -- use { 'kyazdani42/nvim-web-devicons' }             -- filesystem icons
   use { 'mhinz/vim-startify' }                       -- start screen
   use { 'DanilaMihailov/beacon.nvim' }
-  use { 'Mofiqul/dracula.nvim' }
+--  use { 'Mofiqul/dracula.nvim' }
   use ('nvim-treesitter/nvim-treesitter',  {run = ':TSUpdate'})
   use {
   'VonHeikemen/lsp-zero.nvim',
