@@ -24,11 +24,13 @@ packer.startup(function(use)
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  use {                                              -- filesystem navigation
-    'kyazdani42/nvim-tree.lua',
-    requires = 'kyazdani42/nvim-web-devicons'        -- filesystem icons
-  }
-
+  --use {                                              -- filesystem navigation
+    --'kyazdani42/nvim-tree.lua',
+    --requires = 'kyazdani42/nvim-web-devicons'        -- filesystem icons
+  --}
+  use ( 'perservim/nerdtree' )                       -- filesystem navigation
+  use ( 'Xuyuanp/nerdtree-git-plugin' )              -- git integration
+  use { 'kyazdani42/nvim-web-devicons' }             -- filesystem icons
   use { 'mhinz/vim-startify' }                       -- start screen
   use { 'DanilaMihailov/beacon.nvim' }
   use { 'Mofiqul/dracula.nvim' }
