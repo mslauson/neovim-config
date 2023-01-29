@@ -68,5 +68,5 @@ use ('kyazdani42/nvim-web-devicons')
 --find and replace
   use { 'windwp/nvim-spectre' }
   use ( 'nvim-lua/plenary.nvim' )
-
+  use ('voldikss/vim-floaterm')
 end)
