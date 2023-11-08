@@ -5,6 +5,7 @@ local set_keymaps = vim.keymap.set
 
 local all_modes = { "n", "i", "t", "v", "x" }
 local all_modes_no_i = { "n", "t", "v", "x" }
+local visual_modes = { "v", "x" }
 local Util = require("lazyvim.util")
 
 local set_keymaps_list = function(keymaps, mode)
@@ -94,6 +95,17 @@ set_keymaps(all_modes_no_i, "dd", '"_dd', { desc = "Delete Without cut" })
 set_keymaps(all_modes_no_i, "ddx", "dd", { desc = "Delete With cut" })
 set_keymaps(all_modes_no_i, "D", '"_D', { desc = "Delete Without cut" })
 set_keymaps(all_modes_no_i, "Dx", "D", { desc = "Delete With cut" })
+
+set_keymaps({ "n" }, "<leader>.", function()
+  require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1)
+end, { desc = "Toggle comment line" })
+
+set_keymaps(
+  visual_modes,
+  "<leader>.",
+  "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>",
+  { desc = "Toggle comment line" }
+)
 
 local fn = vim.fn
 
@@ -255,12 +267,6 @@ local keymaps = {
     ["bxd"] = {
       cmd = "Va<Vd",
       desc = "Block Delete <>",
-    },
-    ["<leader>."] = {
-      cmd = function()
-        require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1)
-      end,
-      desc = "Toggle comment line",
     },
   },
   insert_mode = {
