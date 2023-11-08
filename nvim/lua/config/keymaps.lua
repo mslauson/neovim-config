@@ -88,12 +88,12 @@ set_keymaps(all_modes_no_i, "C", '"_C', { desc = "Change Without Cut" })
 set_keymaps(all_modes_no_i, "Cx", "C", { desc = "Change With Cut" })
 
 -- d mods
-set_keymaps(all_modes_no_i, "d", '"_d', { desd = "Delete Without cut" })
-set_keymaps(all_modes_no_i, "dx", "d", { desd = "Delete With cut" })
-set_keymaps(all_modes_no_i, "dd", '"_dd', { desd = "Delete Without cut" })
-set_keymaps(all_modes_no_i, "ddx", "dd", { desd = "Delete With cut" })
-set_keymaps(all_modes_no_i, "D", '"_D', { desd = "Delete Without cut" })
-set_keymaps(all_modes_no_i, "Dx", "D", { desd = "Delete With cut" })
+set_keymaps(all_modes_no_i, "d", '"_d', { desc = "Delete Without cut" })
+set_keymaps(all_modes_no_i, "dx", "d", { desc = "Delete With cut" })
+set_keymaps(all_modes_no_i, "dd", '"_dd', { desc = "Delete Without cut" })
+set_keymaps(all_modes_no_i, "ddx", "dd", { desc = "Delete With cut" })
+set_keymaps(all_modes_no_i, "D", '"_D', { desc = "Delete Without cut" })
+set_keymaps(all_modes_no_i, "Dx", "D", { desc = "Delete With cut" })
 
 local fn = vim.fn
 

@@ -29,4 +29,3 @@ done
 rm -rf ~/.config/nvim
 ln -s "$currentPath"/nvim ~/.config/nvim
 
-nvim-switch
