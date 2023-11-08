@@ -12,7 +12,7 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
     { import = "plugins" },
-    { import = "plugins.colorscheme" },
+    { import = "plugins.colorscheme.catppuccin" },
     { import = "plugins.lsp" },
     { import = "plugins.cmp" },
     { import = "plugins.utils" },
