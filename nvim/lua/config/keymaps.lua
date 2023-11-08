@@ -5,6 +5,7 @@ local set_keymaps = vim.keymap.set
 
 local all_modes = { "n", "i", "t", "v", "x" }
 local all_modes_no_i = { "n", "t", "v", "x" }
+local modes_n_v = { "n", "v", "x" }
 local visual_modes = { "v", "x" }
 local Util = require("lazyvim.util")
 
@@ -81,20 +82,20 @@ set_keymaps(all_modes_no_i, "<leader>fm", ":Telescope marks<cr>", { desc = "Tele
 set_keymaps(all_modes_no_i, "<leader>rh", ":!firefox %<CR>", { desc = "Open HTML File In Firefox " })
 
 -- c mods
-set_keymaps(all_modes_no_i, "c", '"_c', { desc = "Change Without Cut" })
-set_keymaps(all_modes_no_i, "cx", "c", { desc = "Change With Cut" })
-set_keymaps(all_modes_no_i, "cc", '"_cc', { desc = "Change Without Cut" })
-set_keymaps(all_modes_no_i, "ccx", "cc", { desc = "Change With Cut" })
-set_keymaps(all_modes_no_i, "C", '"_C', { desc = "Change Without Cut" })
-set_keymaps(all_modes_no_i, "Cx", "C", { desc = "Change With Cut" })
+set_keymaps(modes_n_v, "c", '"_c', { desc = "Change Without Cut" })
+set_keymaps(modes_n_v, "cx", "c", { desc = "Change With Cut" })
+set_keymaps(modes_n_v, "cc", '"_cc', { desc = "Change Without Cut" })
+set_keymaps(modes_n_v, "ccx", "cc", { desc = "Change With Cut" })
+set_keymaps(modes_n_v, "C", '"_C', { desc = "Change Without Cut" })
+set_keymaps(modes_n_v, "Cx", "C", { desc = "Change With Cut" })
 
 -- d mods
-set_keymaps(all_modes_no_i, "d", '"_d', { desc = "Delete Without cut" })
-set_keymaps(all_modes_no_i, "dx", "d", { desc = "Delete With cut" })
-set_keymaps(all_modes_no_i, "dd", '"_dd', { desc = "Delete Without cut" })
-set_keymaps(all_modes_no_i, "ddx", "dd", { desc = "Delete With cut" })
-set_keymaps(all_modes_no_i, "D", '"_D', { desc = "Delete Without cut" })
-set_keymaps(all_modes_no_i, "Dx", "D", { desc = "Delete With cut" })
+set_keymaps(modes_n_v, "d", '"_d', { desc = "Delete Without cut" })
+set_keymaps(modes_n_v, "dx", "d", { desc = "Delete With cut" })
+set_keymaps(modes_n_v, "dd", '"_dd', { desc = "Delete Without cut" })
+set_keymaps(modes_n_v, "ddx", "dd", { desc = "Delete With cut" })
+set_keymaps(modes_n_v, "D", '"_D', { desc = "Delete Without cut" })
+set_keymaps(modes_n_v, "Dx", "D", { desc = "Delete With cut" })
 
 set_keymaps({ "n" }, "<leader>.", function()
   require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1)
