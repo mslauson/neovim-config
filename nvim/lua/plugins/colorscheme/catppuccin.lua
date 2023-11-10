@@ -56,7 +56,7 @@ return {
           indent_blankline = {
             enabled = true,
             scope_color = "peach", -- catppuccin color (eg. `lavender`) Default: text
-            colored_indent_levels = false,
+            colored_indent_levels = true,
           },
           flash = true,
           native_lsp = {

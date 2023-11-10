@@ -1,6 +1,25 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
+    close_if_last_window = false,
+    buffers = {
+      follow_current_file = {
+        enable = true,
+      },
+    },
+    filesystem = {
+      follow_current_file = {
+        enable = true,
+      },
+      -- source_selector = {
+      --   winbar = false,
+      --   statusline = false,
+      -- },
+      filtered_items = {
+        visible = true,
+      },
+      open_files_do_not_replace_types = { "terminal", "Trouble", "qf", "edgy" },
+    },
     commands = {
       system_open = function(state)
         -- TODO: just use vim.ui.open when dropping support for Neovim <0.10
@@ -72,7 +91,7 @@ return {
       end,
     },
     window = {
-      width = 30,
+      -- position = "float",
       mappings = {
         ["<space>"] = false, -- disable space until we figure out which-key disabling
         ["[b"] = "prev_source",
