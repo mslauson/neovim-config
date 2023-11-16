@@ -61,6 +61,12 @@ return {
         "nvim-treesitter/nvim-treesitter-textobjects",
       },
       { "windwp/nvim-ts-autotag" },
+      {
+        "vrischmann/tree-sitter-templ",
+        config = function()
+          require("tree-sitter-templ").setup({})
+        end,
+      },
     },
     build = ":TSUpdate",
     config = function()
@@ -105,6 +111,16 @@ return {
       -- 	filetype = "gotmpl",
       -- 	used_by = { "gohtmltmpl", "gotexttmpl", "gotmpl", "yaml" },
       -- }
+      local treesitter_parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+      treesitter_parser_config.templ = {
+        install_info = {
+          url = "https://github.com/vrischmann/tree-sitter-templ.git",
+          files = { "src/parser.c", "src/scanner.c" },
+          branch = "master",
+        },
+      }
+
+      vim.treesitter.language.register("templ", "templ")
     end,
   },
 }
