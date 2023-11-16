@@ -5,9 +5,6 @@ return {
     dependencies = {},
     opts = {
       setup = {
-        -- nixd = {},
-        -- ["nil"] = {},
-        -- rnix = {},
         templ = {},
       },
     },
