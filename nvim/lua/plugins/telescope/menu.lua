@@ -1,9 +1,9 @@
+local telescope = require("telescope")
 return {
   {
     "octarect/telescope-menu.nvim",
     dependencies = { "nvim-telescope/telescope.nvim" },
     config = function()
-      local telescope = require("telescope")
       telescope.setup({
         extensions = {
           menu = {

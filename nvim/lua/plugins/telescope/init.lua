@@ -44,8 +44,8 @@ return {
           desc = "Stash",
         },
         {
-          "<leader>gBc",
-          "<cmd>Telescope git_bcommits<CR>",
+          "<leader>gc",
+          "<cmd>Telescope git_commits<CR>",
           desc = "Commits",
         },
 
