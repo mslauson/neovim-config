@@ -8,6 +8,7 @@ return {
         -- nixd = {},
         -- ["nil"] = {},
         -- rnix = {},
+        templ = {},
       },
     },
   },
