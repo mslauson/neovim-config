@@ -13,7 +13,10 @@ return {
           d = { name = "Delete 󰺝" },
         },
         ["<leader>a"] = { name = "󱃺 Apps" },
-        ["<leader>c"] = { name = "  Code", { x = { name = "Diagnostics  " }, f = { name = " Flutter" } } },
+        ["<leader>c"] = {
+          name = "  Code",
+          { x = { name = "Diagnostics  " }, f = { name = " Flutter" }, R = { name = "Rulebook" } },
+        },
         ["<leader>A"] = { name = "🤖 AI" },
         ["<leader>r"] = { name = " Runner", f = { name = " Flutter" } },
         ["<leader>f"] = {
