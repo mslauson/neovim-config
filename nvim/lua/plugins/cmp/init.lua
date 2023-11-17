@@ -66,6 +66,7 @@ return {
 
       ---@param opts cmp.ConfigSchema
       opts.sources = cmp.config.sources(vim.list_extend(opts.sources, {
+        { name = "luasnip" },
         { name = "emoji" },
         { name = "orgmode" },
         { name = "zsh" },
