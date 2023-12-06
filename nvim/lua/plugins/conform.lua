@@ -9,7 +9,19 @@ return {
         -- python = { "isort", "black" },
         -- Use a sub-list to run only the first available formatter
         -- javascript = { { "prettierd", "prettier" } },
+        go = { "golines" },
+        java = { "google-java-format" },
         rust = { "rustfmt" },
+        xml = { "xmlfmt" },
+        templ = { "templ" },
+        ["*"] = { "codespell" },
+      },
+      format_on_save = {
+        lsp_fallback = true,
+        timeout_ms = 500,
+      },
+      format_after_save = {
+        lsp_fallback = true,
       },
     },
   },
