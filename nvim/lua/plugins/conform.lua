@@ -8,13 +8,14 @@ return {
         -- Conform will run multiple formatters sequentially
         -- python = { "isort", "black" },
         -- Use a sub-list to run only the first available formatter
-        javascript = { "eslint", "prettier" },
+        javascript = { "eslint_d", "prettierd" },
         go = { "gofmt", "golines", "golines" },
         java = { "google-java-format" },
+        json = { "fixjson" },
         rust = { "rustfmt" },
-        typescript = { "eslint", "prettier" },
+        typescript = { "eslint_d", "prettierd" },
         templ = { "templ" },
-        vue = { "eslint", "prettier" },
+        vue = { "eslint_d", "prettierd" },
         xml = { "xmlformat" },
         ["*"] = { "codespell" },
       },
