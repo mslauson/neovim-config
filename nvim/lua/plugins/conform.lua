@@ -12,7 +12,7 @@ return {
         go = { "golines" },
         java = { "google-java-format" },
         rust = { "rustfmt" },
-        xml = { "xmlfmt" },
+        xml = { "xmlformat" },
         templ = { "templ" },
         ["*"] = { "codespell" },
       },
