@@ -97,6 +97,8 @@ set_keymaps(modes_n_v, "ddx", "dd", { desc = "Delete With cut" })
 set_keymaps(modes_n_v, "D", '"_D', { desc = "Delete Without cut" })
 set_keymaps(modes_n_v, "Dx", "D", { desc = "Delete With cut" })
 
+-- set_keymaps({"n"}, "'", "Telescope marks", { desc = "Delete With cut" })
+
 set_keymaps({ "n" }, "<leader>.", function()
   require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1)
 end, { desc = "Toggle comment line" })

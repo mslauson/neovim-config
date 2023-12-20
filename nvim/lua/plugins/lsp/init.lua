@@ -5,7 +5,8 @@ return {
     dependencies = {},
     opts = {
       setup = {
-        ["templ "] = {},
+        ["templ"] = {},
+        ["groovyls"] = {},
       },
     },
   },
