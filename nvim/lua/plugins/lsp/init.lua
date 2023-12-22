@@ -3,10 +3,12 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {},
+    optional = true,
     opts = {
       setup = {
-        ["templ"] = {},
+        ["templ "] = {},
         ["groovyls"] = {},
+        ["kotlin_language_server"] = {},
       },
     },
   },

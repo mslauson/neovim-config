@@ -51,8 +51,16 @@ set_keymaps(all_modes_no_i, "<leader>ft", ":Telescope telescope-tabs list_tabs<c
 
 set_keymaps(all_modes_no_i, "U", "<C-r>", { desc = "Undo" })
 set_keymaps(all_modes_no_i, "Mx", "V:'<,'>t'><cr>", { desc = "Duplicate Line" })
+set_keymaps(
+  all_modes_no_i,
+  "MX",
+  ":lua duplicate_and_append_blank_line()",
+  { desc = "Duplicate Line and Add Blank Line Above" }
+)
 set_keymaps({ "n", "t", "x" }, "Ms", ":%s/", { desc = "Global Substitute" })
 set_keymaps(all_modes_no_i, "Mcs", ":%s/@+/", { desc = "Global Substitute Clipboard" })
+set_keymaps({ "n", "t", "x" }, "MS", ":%S/", { desc = "Global Subvert" })
+set_keymaps({ "v" }, "Ms", ":s/", { desc = "Global Substitute" })
 set_keymaps({ "n", "t", "x" }, "MS", ":%S/", { desc = "Global Subvert" })
 set_keymaps({ "v" }, "Ms", ":s/", { desc = "Global Substitute" })
 set_keymaps({ "v" }, "MS", ":S/", { desc = "Global Subvert" })
@@ -357,3 +365,8 @@ set_keymaps_list(keymaps.visual_mode, modes.visual_mode)
 set_keymaps_list(keymaps.visual_block_mode, modes.visual_block_mode)
 set_keymaps_list(keymaps.command_mode, modes.command_mode)
 set_keymaps_list(keymaps.apps, modes.normal_mode)
+
+local function duplicate_and_append_blank_line()
+  vim.cmd("V:'<,'>t'>")
+  vim.cmd("normal! '<O<Esc>")
+end
