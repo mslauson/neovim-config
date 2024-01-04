@@ -8,7 +8,6 @@ return {
       setup = {
         ["templ "] = {},
         ["groovyls"] = {},
-        ["kotlin_language_server"] = {},
       },
     },
   },
