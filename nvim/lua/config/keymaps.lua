@@ -29,23 +29,23 @@ end
 set_keymaps(
   all_modes_no_i,
   "<leader>\\",
-  ":lua require('utils.zj').new_vertical()<cr>",
+  ":lua require('utils.tmux').new_vertical()<cr>",
   { desc = "Split Window Vertical" }
 )
 
 set_keymaps(
   all_modes_no_i,
   "<leader>|",
-  ":lua require('utils.zj').new_horizontal()<cr>",
+  ":lua require('utils.tmux').new_horizontal()<cr>",
   { desc = "Split Window Horizontal" }
 )
 
-set_keymaps(
-  all_modes_no_i,
-  "<leader>=",
-  ":lua require('utils.zj').new_floating()<cr>",
-  { desc = "Split Window Horizontal" }
-)
+-- set_keymaps(
+--   all_modes_no_i,
+--   "<leader>=",
+--   ":lua require('utils.zj').new_floating()<cr>",
+--   { desc = "Split Window Horizontal" }
+-- )
 
 set_keymaps(all_modes_no_i, "<leader>ft", ":Telescope telescope-tabs list_tabs<cr>", { desc = "Tabs", remap = true })
 
