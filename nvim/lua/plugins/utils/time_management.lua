@@ -1,1 +1,1 @@
-return { "wakatime/vim-wakatime", event = { "BufReadPre", "BufNewFile" } }
+return { "wakatime/vim-wakatime", enabled = true, event = { "BufReadPre", "BufNewFile" } }
