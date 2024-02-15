@@ -2,7 +2,7 @@ return {
   {
     "nvim-neorg/neorg",
     build = ":Neorg sync-parsers",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    dependencies = { "nvim-lua/plenary.nvim", "max397574/neorg-contexts", "phenax/neorg-hop-extras" },
     config = function()
       require("neorg").setup({
         load = {
@@ -15,6 +15,8 @@ return {
               },
             },
           },
+          ["external.context"] = {},
+          ["external.hop-extras"] = {},
         },
       })
     end,
