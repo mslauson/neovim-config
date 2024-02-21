@@ -12,7 +12,7 @@ return {
         go = { "gofmt", "golines", "golines" },
         java = { "google-java-format" },
         json = { "fixjson" },
-        nix = { "alejandra" },
+        nix = { "nixpkg_fmt", "nixfmt" },
         rust = { "rustfmt" },
         typescript = { "eslint_d", "prettierd" },
         templ = { "templ" },
