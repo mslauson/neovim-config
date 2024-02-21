@@ -8,6 +8,7 @@ return {
       setup = {
         ["templ "] = {},
         ["groovyls"] = {},
+        ["rnix-lsp"] = {},
       },
     },
   },
