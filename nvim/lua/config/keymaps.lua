@@ -58,7 +58,9 @@ set_keymaps(
   { desc = "Duplicate Line and Add Blank Line Above" }
 )
 set_keymaps(modes_n_v, "Mc", '"_c', { desc = "Change Without Cut" })
+set_keymaps(modes_n_v, "MC", '"_c', { desc = "Change Without Cut" })
 set_keymaps(modes_n_v, "Md", '"_d', { desc = "Delete Without cut" })
+set_keymaps(modes_n_v, "MD", '"_d', { desc = "Delete Without cut" })
 set_keymaps({ "n", "t", "x" }, "Ms", ":%s/", { desc = "Global Substitute" })
 -- set_keymaps(all_modes_no_i, "Mcs", ":%s/@+/", { desc = "Global Substitute Clipboard" })
 set_keymaps({ "n", "t", "x" }, "MS", ":%S/", { desc = "Global Subvert" })
@@ -70,11 +72,11 @@ set_keymaps(all_modes_no_i, "McS", ":%S/@+/", { desc = "Global Subvert Clipboard
 set_keymaps(all_modes_no_i, "Mp", ":put<cr>", { desc = "Paste On New Line Below" })
 set_keymaps(all_modes_no_i, "MP", ":put!<cr>", { desc = "Paste On New Line Above" })
 
-set_keymaps(all_modes_no_i, "Myc", "yt{", { desc = "Yank To Curly '{'" })
-set_keymaps(all_modes_no_i, "Myp", "yt(", { desc = "Yank To Parenthesis '('" })
-
-set_keymaps(all_modes_no_i, "MDc", "dt{", { desc = "Delete To Curly '{'" })
-set_keymaps(all_modes_no_i, "MDp", "dt(", { desc = "Delete To Parenthesis '('" })
+-- set_keymaps(all_modes_no_i, "Myc", "yt{", { desc = "Yank To Curly '{'" })
+-- set_keymaps(all_modes_no_i, "Myp", "yt(", { desc = "Yank To Parenthesis '('" })
+--
+-- set_keymaps(all_modes_no_i, "MDc", "dt{", { desc = "Delete To Curly '{'" })
+-- set_keymaps(all_modes_no_i, "MDp", "dt(", { desc = "Delete To Parenthesis '('" })
 
 set_keymaps(all_modes_no_i, "<leader>fx", ":TodoTelescope<cr>", { desc = "Save Buffer" })
 set_keymaps(all_modes, "<C-s>", "<Esc>:w<cr>", { desc = "Save Buffer" })
