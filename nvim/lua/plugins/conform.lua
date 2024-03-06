@@ -9,9 +9,10 @@ return {
         -- python = { "isort", "black" },
         -- Use a sub-list to run only the first available formatter
         javascript = { "eslint_d", "prettierd" },
-        go = { "gofmt", "golines", "golines" },
+        go = { "gofmt", "golines" },
         java = { "google-java-format" },
         json = { "fixjson" },
+        md = { "markdown-toc" },
         nix = { "nixpkg_fmt", "nixfmt" },
         rust = { "rustfmt" },
         typescript = { "eslint_d", "prettierd" },
