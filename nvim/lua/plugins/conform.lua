@@ -8,6 +8,7 @@ return {
         -- Conform will run multiple formatters sequentially
         -- python = { "isort", "black" },
         -- Use a sub-list to run only the first available formatter
+        astro = { "eslint_d", "prettierd" },
         javascript = { "eslint_d", "prettierd" },
         go = { "gofmt", "golines" },
         java = { "google-java-format" },
