@@ -1,5 +1,4 @@
 local parsers = {
-  "astro",
   "bash",
   "c",
   "cmake",
