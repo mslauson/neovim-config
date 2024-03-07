@@ -1,4 +1,5 @@
 local parsers = {
+  "astro",
   "bash",
   "c",
   "cmake",
@@ -56,7 +57,6 @@ return {
       "TSModuleInfo",
     },
     dependencies = {
-      "JoosepAlviste/nvim-ts-context-commentstring",
       {
         "nvim-treesitter/nvim-treesitter-textobjects",
       },
@@ -77,9 +77,6 @@ return {
         highlight = {
           enable = true, -- false will disable the whole extension
           disable = "", -- list of language that will be disabled
-        },
-        context_commentstring = {
-          enable = true,
         },
         autotag = {
           enable = true,
