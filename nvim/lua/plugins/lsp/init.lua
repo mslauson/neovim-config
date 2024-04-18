@@ -6,6 +6,7 @@ return {
     optional = true,
     opts = {
       setup = {
+        ["sts4"] = {},
         -- ["templ "] = {},
         ["groovyls"] = {},
         -- ["rnix-lsp"] = {},
