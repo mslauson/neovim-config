@@ -1,5 +1,6 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
+    dependencies = {"luasnip"},
   opts = {
     close_if_last_window = false,
     buffers = {
