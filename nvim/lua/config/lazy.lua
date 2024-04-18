@@ -14,7 +14,7 @@ require("lazy").setup({
     { import = "plugins" },
     { import = "plugins.colorscheme.catppuccin" },
     { import = "plugins.lsp" },
-    { import = "plugins.cmp" },
+    -- { import = "plugins.cmp" },
     { import = "plugins.utils" },
     { import = "plugins.treesitter" },
     { import = "plugins.telescope" },
