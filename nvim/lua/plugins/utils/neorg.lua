@@ -1,6 +1,7 @@
 return {
   {
     "nvim-neorg/neorg",
+    enabled = false,
     build = ":Neorg sync-parsers",
     dependencies = { "nvim-lua/plenary.nvim", "max397574/neorg-contexts", "phenax/neorg-hop-extras" },
     config = function()
