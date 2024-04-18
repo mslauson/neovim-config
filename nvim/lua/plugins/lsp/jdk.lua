@@ -1,0 +1,57 @@
+return {
+  {
+    --   "neovim/nvim-lspconfig",
+    --   opts = {
+    --     servers = {
+    --       jdtls = {},
+    --       sts4 = {},
+    --     },
+    --     setup = {
+    --       jdtls = {},
+    --       sts4 = {},
+    --     },
+    --   },
+    -- },
+
+    "nvim-java/nvim-java",
+    dependencies = {
+      "nvim-java/lua-async-await",
+      "nvim-java/nvim-java-core",
+      "nvim-java/nvim-java-test",
+      "nvim-java/nvim-java-dap",
+      "MunifTanjim/nui.nvim",
+      "neovim/nvim-lspconfig",
+      "mfussenegger/nvim-dap",
+      {
+        "williamboman/mason.nvim",
+        opts = {
+          registries = {
+            "github:nvim-java/mason-registry",
+            "github:mason-org/mason-registry",
+          },
+        },
+      },
+    },
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+      handlers = {
+        ["jdtls"] = function()
+          require("java").setup({
+            -- java_test = {
+            --   enable = Util.has("nvim-dap"),
+            -- },
+            -- java_debug_adapter = {
+            --   enable = Util.has("nvim-dap"),
+            -- },
+            jdk = {
+              auto_install = false,
+            },
+          })
+        end,
+        ["groovyls"] = function() end,
+      },
+    },
+  },
+}
