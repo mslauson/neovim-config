@@ -6,9 +6,9 @@ return {
     optional = true,
     opts = {
       setup = {
-        ["templ "] = {},
+        -- ["templ "] = {},
         ["groovyls"] = {},
-        ["rnix-lsp"] = {},
+        -- ["rnix-lsp"] = {},
       },
     },
   },
