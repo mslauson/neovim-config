@@ -13,7 +13,7 @@ require("lazy").setup({
     -- import any extras modules here
     { import = "plugins" },
     { import = "plugins.colorscheme.catppuccin" },
-    { import = "plugins.lsp.jdk" },
+    { import = "plugins.lsp" },
     -- { import = "plugins.cmp" },
     { import = "plugins.utils" },
     { import = "plugins.treesitter" },
