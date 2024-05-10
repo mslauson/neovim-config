@@ -9,6 +9,13 @@ local modes_n_v = { "n", "v", "x" }
 local visual_modes = { "v", "x" }
 local Util = require("lazyvim.util")
 
+local wk = require("which-key")
+
+wk.register({
+  y = { '"+y', "Yank to system clipboard" },
+  p = { '"+p', "Paste from system clipboard" },
+}, { prefix = "<leader>" })
+
 local set_keymaps_list = function(keymaps, mode)
   local opt = { silent = true }
 
@@ -90,20 +97,20 @@ set_keymaps(all_modes_no_i, "<leader>fm", ":Telescope marks<cr>", { desc = "Tele
 set_keymaps(all_modes_no_i, "<leader>rh", ":!firefox %<CR>", { desc = "Open HTML File In Firefox " })
 
 -- c mods
-set_keymaps(modes_n_v, "c", '"_c', { desc = "Change Without Cut" })
-set_keymaps(modes_n_v, "cx", "c", { desc = "Change With Cut" })
-set_keymaps(modes_n_v, "cc", '"_cc', { desc = "Change Without Cut" })
-set_keymaps(modes_n_v, "ccx", "cc", { desc = "Change With Cut" })
-set_keymaps(modes_n_v, "C", '"_C', { desc = "Change Without Cut" })
-set_keymaps(modes_n_v, "Cx", "C", { desc = "Change With Cut" })
-
--- d mods
-set_keymaps(modes_n_v, "d", '"_d', { desc = "Delete Without cut" })
-set_keymaps(modes_n_v, "dx", "d", { desc = "Delete With cut" })
-set_keymaps(modes_n_v, "dd", '"_dd', { desc = "Delete Without cut" })
-set_keymaps(modes_n_v, "ddx", "dd", { desc = "Delete With cut" })
-set_keymaps(modes_n_v, "D", '"_D', { desc = "Delete Without cut" })
-set_keymaps(modes_n_v, "Dx", "D", { desc = "Delete With cut" })
+-- set_keymaps(modes_n_v, "c", '"_c', { desc = "Change Without Cut" })
+-- set_keymaps(modes_n_v, "cx", "c", { desc = "Change With Cut" })
+-- set_keymaps(modes_n_v, "cc", '"_cc', { desc = "Change Without Cut" })
+-- set_keymaps(modes_n_v, "ccx", "cc", { desc = "Change With Cut" })
+-- set_keymaps(modes_n_v, "C", '"_C', { desc = "Change Without Cut" })
+-- set_keymaps(modes_n_v, "Cx", "C", { desc = "Change With Cut" })
+--
+-- -- d mods
+-- set_keymaps(modes_n_v, "d", '"_d', { desc = "Delete Without cut" })
+-- set_keymaps(modes_n_v, "dx", "d", { desc = "Delete With cut" })
+-- set_keymaps(modes_n_v, "dd", '"_dd', { desc = "Delete Without cut" })
+-- set_keymaps(modes_n_v, "ddx", "dd", { desc = "Delete With cut" })
+-- set_keymaps(modes_n_v, "D", '"_D', { desc = "Delete Without cut" })
+-- set_keymaps(modes_n_v, "Dx", "D", { desc = "Delete With cut" })
 
 -- set_keymaps({"n"}, "'", "Telescope marks", { desc = "Delete With cut" })
 
