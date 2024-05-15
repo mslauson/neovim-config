@@ -11,7 +11,7 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     opts = function(_, opts)
-      opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, { "codeql", "css-ls" })
+      opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, { "codeqlls", "cssls" })
     end,
   },
 }
