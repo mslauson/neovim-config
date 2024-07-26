@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local set_keymaps = vim.keymap.set
+local all_modes_no_i = { "n", "t", "v", "x" }
 
 set_keymaps("i", "jk", "<ESC>", { desc = "Remap ESC" })
 
