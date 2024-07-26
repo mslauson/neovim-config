@@ -1,21 +1,13 @@
 return {
   {
-    "alexghergh/nvim-tmux-navigation",
-    lazy = false,
-    enabled = false,
+    "mslauson/tmux-panes.nvim",
     config = function()
-      require("nvim-tmux-navigation").setup({
-        disable_when_zoomed = true, -- defaults to false
-        keybindings = {
-          left = "<c-h>",
-          down = "<c-j>",
-          up = "<c-k>",
-          right = "<c-l>",
-          last_active = "<c-\\>",
-          next = "<c-space>",
-        },
-      })
+      require("tmux-panes").setup()
     end,
+    keys = {
+      { "<leader>-", ":TmuxSplitVertical", desc = "New tmux vertical split at buffer CWD" },
+      { "<leader>\\", ":TmuxSplitHorizontal", desc = "New tmux horizontal split at buffer CWD" },
+    },
   },
   {
     "christoomey/vim-tmux-navigator",
