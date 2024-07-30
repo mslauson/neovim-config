@@ -13,7 +13,6 @@ return {
     },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
-      local cmp = require("cmp")
       table.insert(opts.sources, { name = "npm", keyword_length = 4 })
     end,
   },
