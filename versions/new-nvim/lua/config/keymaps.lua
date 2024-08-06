@@ -4,6 +4,7 @@
 local set_keymaps = vim.keymap.set
 local all_modes_no_i_t = { "n", "v", "x" }
 local non_editing_modes = { "n", "v", "x" }
+local visual_modes = { "v", "x" }
 local modes_i_v = { "i", "v" }
 local all_modes = { "i", "n", "t", "v", "x" }
 
@@ -26,3 +27,15 @@ set_keymaps(all_modes_no_i_t, "Myp", "yt(", { desc = "Yank To Parenthesis '('" }
 
 set_keymaps(all_modes_no_i_t, "Mdc", "dt{", { desc = "Delete To Curly '{'" })
 set_keymaps(all_modes_no_i_t, "Mdp", "dt(", { desc = "Delete To Parenthesis '('" })
+
+--comment.nvim
+set_keymaps({ "n" }, "<leader>.", function()
+  require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1)
+end, { desc = "Toggle comment line" })
+
+set_keymaps(
+  visual_modes,
+  "<leader>.",
+  "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>",
+  { desc = "Toggle comment line" }
+)
