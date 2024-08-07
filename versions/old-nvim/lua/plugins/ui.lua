@@ -18,8 +18,8 @@ return {
     },
   },
   {
-    "nvim-neo-tree/neo-tree.nvim",
     enabled = true,
+    "nvim-neo-tree/neo-tree.nvim",
     opts = {
       close_if_last_window = false,
       buffers = {
