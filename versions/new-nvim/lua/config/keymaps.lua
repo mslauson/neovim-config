@@ -19,7 +19,7 @@ set_keymaps(non_editing_modes, "<leader>,d", "V:'<,'>t'><cr>", { desc = "Duplica
 
 -- substitute
 set_keymaps({ "n", "x" }, "<leader>,s", ":%s/", { desc = "File Substitute" })
-set_keymaps({ "v" }, "<leader>,s", ":%s/", { desc = "Visual Substitute" })
+set_keymaps({ "v" }, "<leader>,s", ":s/", { desc = "Visual Substitute" })
 
 -- todo make the equvakebt for closing things
 set_keymaps(all_modes_no_i_t, "Myc", "yt{", { desc = "Yank To Curly '{'" })
