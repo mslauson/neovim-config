@@ -72,5 +72,7 @@ return {
     { "<leader>oct", "<cmd>ObsidianToggleCheckbox ", desc = "Toggle Checkbox Options" },
     { "<leader>or", "<cmd>ObsidianRename ", desc = "Rename file with given name" },
     { "<leader>opi", "<cmd>ObsidianPasteImage ", desc = "Paste image file (Req Name)" },
+
+    { "<leader>ow", "<cmd>ObsidianWorkspace ", desc = "Switch Workspace (Req Arg)" },
   },
 }
