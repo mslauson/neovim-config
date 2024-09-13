@@ -55,7 +55,7 @@ return {
     { "<leader>olf", "<cmd>ObsidianFollowLink<cr>", desc = "Follow Link" },
     { "<leader>olb", "<cmd>ObsidianBacklinks<cr>", desc = "All references to current buffer" },
     { "<leader>oll", "<cmd>ObsidianLinks<cr>", desc = "All links in current buffer" },
-    { "<leader>oln", "<cmd>ObsidianLinkNew ", desc = "Extract new note and create link" },
+    { "<leader>oln", "<cmd>ObsidianLinkNew ", desc = "Link to visual selection" },
     { "<leader>olh", "<cmd>ObsidianFollowLink hsplit<cr>", desc = "Follow Link Horizontal Split -" },
     { "<leader>olv", "<cmd>ObsidianFollowLink vsplit<cr>", desc = "Follow Link Vertical Split |" },
 
@@ -65,7 +65,12 @@ return {
     { "<leader>odd", "<cmd>ObsidianDailies ", desc = "Open Tomorrow's Daily" },
 
     { "<leader>ot", "<cmd>ObsidianTags ", desc = "Search for all occurrences of given tags" },
-    { "<leader>oT", "<cmd>ObsidianTemplate ", desc = "Open Template" },
-    {}
+    { "<leader>oTo", "<cmd>ObsidianTemplate ", desc = "Open Template" },
+    { "<leader>oTn", "<cmd>ObsidianNewFromTemplate ", desc = "Create new note from given template" },
+    { "<leader>oen", "<cmd>ObsidianExtractNote ", desc = "Extract new note and create link" },
+
+    { "<leader>oct", "<cmd>ObsidianToggleCheckbox ", desc = "Toggle Checkbox Options" },
+    { "<leader>or", "<cmd>ObsidianRename ", desc = "Rename file with given name" },
+    { "<leader>opi", "<cmd>ObsidianPasteImage ", desc = "Paste image file (Req Name)" },
   },
 }
