@@ -49,11 +49,23 @@ return {
     },
   },
   keys = {
-    { "<leader>ono", "<cmd>ObsidianOpen", desc = "Open Note" },
-    { "<leader>onn", "<cmd>ObsidianNew", desc = "New Note" },
-    { "<leader>oq", "<cmd>ObsidianQuickSwitch", desc = "Quick Switch" },
-    { "<leader>olf", "<cmd>ObsidianFollowLink", desc = "Follow Link" },
-    { "<leader>olh", "<cmd>ObsidianFollowLink hsplit", desc = "Follow Link Horizontal Split -" },
-    { "<leader>olh", "<cmd>ObsidianFollowLink vsplit", desc = "Follow Link Vertical Split |" },
+    { "<leader>ono", "<cmd>ObsidianOpen ", desc = "Open Note" },
+    { "<leader>onn", "<cmd>ObsidianNew ", desc = "New Note" },
+    { "<leader>oq", "<cmd>ObsidianQuickSwitch<cr>", desc = "Quick Switch" },
+    { "<leader>olf", "<cmd>ObsidianFollowLink<cr>", desc = "Follow Link" },
+    { "<leader>olb", "<cmd>ObsidianBacklinks<cr>", desc = "All references to current buffer" },
+    { "<leader>oll", "<cmd>ObsidianLinks<cr>", desc = "All links in current buffer" },
+    { "<leader>oln", "<cmd>ObsidianLinkNew ", desc = "Extract new note and create link" },
+    { "<leader>olh", "<cmd>ObsidianFollowLink hsplit<cr>", desc = "Follow Link Horizontal Split -" },
+    { "<leader>olv", "<cmd>ObsidianFollowLink vsplit<cr>", desc = "Follow Link Vertical Split |" },
+
+    { "<leader>odt", "<cmd>ObsidianToday<cr>", desc = "Open Today's Daily" },
+    { "<leader>odo", "<cmd>ObsidianTomorrow<cr>", desc = "Open Tomorrow's Daily" },
+    { "<leader>ody", "<cmd>ObsidianTomorrow<cr>", desc = "Open Tomorrow's Daily" },
+    { "<leader>odd", "<cmd>ObsidianDailies ", desc = "Open Tomorrow's Daily" },
+
+    { "<leader>ot", "<cmd>ObsidianTags ", desc = "Search for all occurrences of given tags" },
+    { "<leader>oT", "<cmd>ObsidianTemplate ", desc = "Open Template" },
+    {}
   },
 }
