@@ -14,13 +14,23 @@ return {
         },
         -- ["<leader>a"] = { name = "󱃺 Apps" },
         -- ["<leader>c"] = {
-          name = "  Code",
-          -- { x = { name = "Diagnostics  " }, f = { name = " Flutter" }, R = { name = "Rulebook" } },
+        name = "  Code",
+        -- { x = { name = "Diagnostics  " }, f = { name = " Flutter" }, R = { name = "Rulebook" } },
         -- },
-        ["<leader>o"] = { name = "Obsidian", 
+        ["<leader>o"] = {
+          name = "Obsidian",
           {
-            p = {name = "Paste"}
-          }
+            c = { name = "Checkbox" },
+            e = { name = "Extract" },
+            d = { name = "Daily" },
+            l = { name = "Link" },
+            n = { name = "New" },
+            o = { name = "Open" },
+            p = { name = "Paste" },
+            t = { name = "Tags" },
+            T = { name = "Templates" },
+            w = { name = "Workspace" },
+          },
         },
         ["<leader>r"] = { name = " Runner", f = { name = " Flutter" } },
         ["<leader>f"] = {

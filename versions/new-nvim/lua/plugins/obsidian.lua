@@ -49,7 +49,7 @@ return {
     },
   },
   keys = {
-    { "<leader>Ono", "<cmd>ObsidianOpen ", desc = "Open Note" },
+    { "<leader>Oo", "<cmd>ObsidianOpen ", desc = "Open Note" },
     { "<leader>Onn", "<cmd>ObsidianNew ", desc = "New Note" },
     { "<leader>Oq", "<cmd>ObsidianQuickSwitch<cr>", desc = "Quick Switch" },
     { "<leader>Olf", "<cmd>ObsidianFollowLink<cr>", desc = "Follow Link" },
