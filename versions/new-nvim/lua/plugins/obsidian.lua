@@ -48,4 +48,8 @@ return {
       substitutions = {},
     },
   },
+keys = {
+  {
+          -- change a keymap
+    { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },    }
 }
