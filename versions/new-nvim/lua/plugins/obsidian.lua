@@ -48,8 +48,12 @@ return {
       substitutions = {},
     },
   },
-keys = {
-  {
-          -- change a keymap
-    { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },    }
+  keys = {
+    { "<leader>ono", "<cmd>ObsidianOpen", desc = "Open Note" },
+    { "<leader>onn", "<cmd>ObsidianNew", desc = "New Note" },
+    { "<leader>oq", "<cmd>ObsidianQuickSwitch", desc = "Quick Switch" },
+    { "<leader>olf", "<cmd>ObsidianFollowLink", desc = "Follow Link" },
+    { "<leader>olh", "<cmd>ObsidianFollowLink hsplit", desc = "Follow Link Horizontal Split -" },
+    { "<leader>olh", "<cmd>ObsidianFollowLink vsplit", desc = "Follow Link Vertical Split |" },
+  },
 }
