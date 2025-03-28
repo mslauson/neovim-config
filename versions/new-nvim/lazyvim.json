@@ -6,6 +6,7 @@
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.fzf",
     "lazyvim.plugins.extras.editor.harpoon2",
+    "lazyvim.plugins.extras.editor.illuminate",
     "lazyvim.plugins.extras.editor.inc-rename",
     "lazyvim.plugins.extras.editor.overseer",
     "lazyvim.plugins.extras.editor.refactoring",
@@ -36,8 +37,9 @@
     "lazyvim.plugins.extras.util.rest",
     "lazyvim.plugins.extras.util.startuptime"
   ],
+  "install_version": 7,
   "news": {
     "NEWS.md": "10960"
   },
-  "version": 7
+  "version": 8
 }

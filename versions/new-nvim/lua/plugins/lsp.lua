@@ -10,11 +10,28 @@ return {
         lemminx = {},
         groovyls = {},
         gradle_ls = {},
+        helm_ls = {},
+        jinja_lsp = {},
       },
       setup = {
         gradle_ls = {
           settings = {
             gradleWrapperEnabled = true,
+          },
+          groovyls = {
+            settings = {
+              groovy = {
+                configureOnOpen = true,
+                configureOnType = true,
+              },
+            },
+          },
+          helm_ls = {
+            settings = {
+              helm = {
+                kubeconfig = "/home/alex/.kube/config",
+              },
+            },
           },
         },
       },
