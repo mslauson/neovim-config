@@ -29,7 +29,7 @@ return {
           helm_ls = {
             settings = {
               helm = {
-                kubeconfig = "/home/alex/.kube/config",
+                kubeconfig = "~/.kube/config",
               },
             },
           },
